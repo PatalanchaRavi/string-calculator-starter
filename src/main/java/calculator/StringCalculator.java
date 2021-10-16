@@ -17,6 +17,10 @@ class StringCalculator {
 			return sum(numList);
 		}
     }
+    
+    private static int toInt(String number){
+		return Integer.parseInt(number);
+	}
 
 	private int sum(String[] numList) {
 		// TODO Auto-generated method stub
