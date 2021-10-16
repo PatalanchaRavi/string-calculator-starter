@@ -2,7 +2,7 @@ package calculator;
 
 class StringCalculator {
 
-    public static int add(String input) {
+    public int add(String input) {
     	if(input.equals("")){
 			return 0;
 		}
@@ -18,11 +18,11 @@ class StringCalculator {
 		}
     }
     
-    private static int toInt(String number){
+    private int toInt(String number){
 		return Integer.parseInt(number);
 	}
 
-	private static int sum(String[] numbers) {
+	private int sum(String[] numbers) {
 		 int total = 0;
 	 	    String negString = "";
 
@@ -45,7 +45,7 @@ class StringCalculator {
 
 	}
 
-	private static String[] splitNumbers(String numbers, String divider) {
+	private String[] splitNumbers(String numbers, String divider) {
 		 return numbers.split(divider);
 	}
 
