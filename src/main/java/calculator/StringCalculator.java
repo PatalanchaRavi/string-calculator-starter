@@ -9,7 +9,7 @@ class StringCalculator {
 		else{
 			String delimiter = ",";
 			if(input.matches("//(.*)\n(.*)")){
-				delimiter = Character.toString(text.charAt(2));
+				delimiter = Character.toString(input.charAt(2));
 				input = input.substring(4);
 			}
 			
@@ -27,9 +27,8 @@ class StringCalculator {
 		return 0;
 	}
 
-	private String[] splitNumbers(String input, String string) {
-		// TODO Auto-generated method stub
-		return null;
+	private String[] splitNumbers(String numbers, String divider) {
+		 return numbers.split(divider);
 	}
 
 }
